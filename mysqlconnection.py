@@ -24,7 +24,7 @@ class MySQLConnection:
                 # INSERT queries will return the ID NUMBER of the row inserted
                     self.connection.commit()
                     return cursor.lastrowid
-                elif query.lower().find("select") >= 0:
+                elif query.lower().find("select") >= 0: 
                     # SELECT queries will return the data from the database as a LIST OF DICTIONARIES
                     result = cursor.fetchall()
                     return result
